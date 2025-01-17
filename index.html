@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+ <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tech2etc Ecommerce Tutorial</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+         crossorigin="anonymous" referrerpolicy="no-referrer" />     
+        <link rel="stylesheet" href="style.css">
+        
+       
+           
+      
+        <script>
+            function validateInput(input) {
+                var regex = /<script\b[^<]*(?:(?!<\/script>)<[^<]*)*<\/script>/gi;
+                return input.replace(regex, "");
+            }
+    
+            function handleSubmit(event) {
+                event.preventDefault();
+                var userInput = document.getElementById("userInput").value;
+                var sanitizedInput = validateInput(userInput);
+                document.getElementById("output").innerText = sanitizedInput;
+            }
+        </script>   
+    </head>
+<body>
+   
+
+        <header>
+            <div id="menu-bar" class="fa fa-bars"></div>
+            <a href="#" class="logo">Logo</a>
+            <nav class="navbar">
+                <a href="#home">Home</a>
+                <a href="#product">Product</a>
+                <a href="#fearured">Fearured</a>
+                <a href="#blog">blbg</a>
+                <a href="#news">contact</a>
+                
+            </nav>
+            <div class="icons">
+                <a href="#"><i class="fa fa-heart"></i></a>
+                <a href="#"><i class="fa fa-shopping-cart"></i></a>
+                <a href="#"><i class="fa fa-user"></i></a>
+            </div>
+        </header>
+        <!--end header-->
+        <section class="home" id="home">
+            <div class="slide-container active">
+                <div class="slide">
+                    <div class="content">
+                        <span>Nike Sport Shoes</span>
+                        <h3>Nike Metcon Shoes</h3>
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit 
+                            Sunt nam adipisci ipsa officiis Amet pariatur eaque soluta 
+                            sit iure neque voluptate.
+                        </p>
+                        <a href="#" class="btn">add to card</a>
+                    </div>
+                    <div class="image">
+                        <img src="images/NIKE1.png" class="shoe">
+                    </div>
+                </div>
+            </div>
+            <div class="slide-container">
+                <div class="slide">
+                    <div class="content">
+                        <span>Nike Sport Shoes</span>
+                        <h3>Nike Metcon Shoes</h3>
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit 
+                            Sunt nam adipisci ipsa officiis Amet pariatur eaque soluta 
+                            sit iure neque voluptate.
+                        </p>
+                        <a href="#" class="btn">add to card</a>
+                    </div>
+                    <div class="image">
+                        <img src="images/NIKE2.jpg" class="shoe">
+                    </div>
+                </div>
+            </div>
+            <div class="slide-container">
+                <div class="slide">
+                    <div class="content">
+                        <span>Nike Sport Shoes</span>
+                        <h3>Nike Metcon Shoes</h3>
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit 
+                            Sunt nam adipisci ipsa officiis Amet pariatur eaque soluta 
+                            sit iure neque voluptate.
+                        </p>
+                        <a href="#" class="btn">add to card</a>
+                    </div>
+                    <div class="image">
+                        <img src="images/NIKE5.jpg" class="shoe">
+                    </div>
+                </div>
+            </div>
+            <div class="slide-container">
+                <div class="slide">
+                    <div class="content">
+                        <span>Nike Sport Shoes</span>
+                        <h3>Nike Metcon Shoes</h3>
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit 
+                            Sunt nam adipisci ipsa officiis Amet pariatur eaque soluta 
+                            sit iure neque voluptate.
+                        </p>
+                        <a href="#" class="btn">add to card</a>
+                    </div>
+                    <div class="image">
+                        <img src="images/NIKE3.jpg" class="shoe">
+                    </div>
+                </div>
+            </div>
+
+            <div id="prev" class="fa fa-angle-left" onclick="prev();"></div>
+            <div id="next" class="fa fa-angle-right" onclick="next();"></div>
+        </section>
+        <!--end home-->
+        <section class="product" id="product">
+            <h1 class="heading">latest <span>Products</span></h1>
+            <div class="box-container">
+                <div class="box">
+                    <div class="icons">
+                        <a href="#" class="fa fa-heart"></a>
+                        <a href="#" class="fa fa-share"></a>
+                        <a href="#" class="fa fa-eye"></a>
+                    </div>
+                    <div class="content">
+                        <img src="images/NIKE4.jpg" alt="">
+                        <h3>Nike Shoes</h3>
+                        <div class="price">$200 <span>$150</span></div>
+                        <div class="stars">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icons">
+                        <a href="#" class="fa fa-heart"></a>
+                        <a href="#" class="fa fa-share"></a>
+                        <a href="#" class="fa fa-eye"></a>
+                    </div>
+                    <div class="content">
+                        <img src="images/NIKE5.jpg" alt="">
+                        <h3>Nike Shoes</h3>
+                        <div class="price">$200 <span>$150</span></div>
+                        <div class="stars">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icons">
+                        <a href="#" class="fa fa-heart"></a>
+                        <a href="#" class="fa fa-share"></a>
+                        <a href="#" class="fa fa-eye"></a>
+                    </div>
+                    <div class="content">
+                        <img src="images/NIKE5.jpg" alt="">
+                        <h3>Nike Shoes</h3>
+                        <div class="price">$200 <span>$150</span></div>
+                        <div class="stars">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icons">
+                        <a href="#" class="fa fa-heart"></a>
+                        <a href="#" class="fa fa-share"></a>
+                        <a href="#" class="fa fa-eye"></a>
+                    </div>
+                    <div class="content">
+                        <img src="images/nike10.png" alt="">
+                        <h3>Nike Shoes</h3>
+                        <div class="price">$200 <span>$150</span></div>
+                        <div class="stars">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icons">
+                        <a href="#" class="fa fa-heart"></a>
+                        <a href="#" class="fa fa-share"></a>
+                        <a href="#" class="fa fa-eye"></a>
+                    </div>
+                    <div class="content">
+                        <img src="images/nike13.png" alt="">
+                        <h3>Nike Shoes</h3>
+                        <div class="price">$200 <span>$150</span></div>
+                        <div class="stars">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icons">
+                        <a href="#" class="fa fa-heart"></a>
+                        <a href="#" class="fa fa-share"></a>
+                        <a href="#" class="fa fa-eye"></a>
+                    </div>
+                    <div class="content">
+                        <img src="images/nike13.png" alt="">
+                        <h3>Nike Shoes</h3>
+                        <div class="price">$200 <span>$150</span></div>
+                        <div class="stars">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--end product-->
+        <section class="featured" id="fearured">
+            <h1 class="heading">New <span>Product</span></h1>
+            <div class="row">
+                <div class="image-container">
+                    <div class="small-image">
+                        <img src="images/NIKE1.png" alt="" class="featured-image-1">
+                        <img src="images/NIKE2.jpg" alt="" class="featured-image-1">
+                        <img src="images/NIKE3.jpg" alt="" class="featured-image-1">
+                        <img src="images/NIKE4.jpg" alt="" class="featured-image-1">
+                       
+                    </div>
+                    <div class="big-image">
+                        <img src="img/product1/1.jpg" alt="" class="big-image-1">
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>new nike airmac shoes</h3>
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Fugit officiis omnis quo laboriosam velit culpa ex illo, error enim nostrum?
+                    </p>
+                    <div class="price">$90 <span>$120</span></div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="image-container">
+                    <div class="small-image">
+                        <img src="images/nike6.png" alt="" class="featured-image-2">
+                        <img src="images/nike15.png" alt="" class="featured-image-2">
+                        <img src="images/nike14.png" alt="" class="featured-image-2">
+                        <img src="images/NIKE8.jpg" alt="" class="featured-image-2">
+                    </div>
+                    <div class="big-image">
+                        <img src="img/product2/1.jpg" alt="" class="big-image-2">
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>new nike airmac shoes</h3>
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Fugit officiis omnis quo laboriosam velit culpa ex illo, error enim nostrum?
+                    </p>
+                    <div class="price">$90 <span>$120</span></div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="image-container">
+                    <div class="small-image">
+                        <img src="img/product3/1.jpg" alt="" class="featured-image-3">
+                        <img src="img/product3/2.jpg" alt="" class="featured-image-3">
+                        <img src="img/product3/3.jpg" alt="" class="featured-image-3">
+                        <img src="img/product3/4.jpg" alt="" class="featured-image-3">
+                    </div>
+                    <div class="big-image">
+                        <img src="img/product3/1.jpg" alt="" class="big-image-3">
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>new nike airmac shoes</h3>
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Fugit officiis omnis quo laboriosam velit culpa ex illo, error enim nostrum?
+                    </p>
+                    <div class="price">$90 <span>$120</span></div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+        </section>
+        <!--end featured-->
+        <section class="blog" id="blog">
+            <h1 class="heading">Team <span>Weblog</span></h1>
+            <div class="box-container">
+                <div class="box">
+                    <img src="img/team/1.png" alt="">
+                    <h3>Zahra Ahmadi</h3>
+                    <p>
+                        
+                    </p>
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa fa-star"></i>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="img/team/2.png" alt="">
+                    <h3>Maryam Nazari</h3>
+                    <p>
+                        
+                    </p>
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa fa-star-half-o"></i>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="img/team/3.png" alt="">
+                    <h3></h3>
+                    <p>
+                        
+                    </p>
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                        <i class="fa fa fa-star-half-o"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--end blog-->
+        <section class="news" id="news">
+            <div class="content">
+                <h3>monthly news letter</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Fuga sed itaque ducimus maxime facere nihil expedita non sunt? Nostrum, voluptatem?
+                </p>
+                <form action="">
+                    <input type="email" placeholder="please enter your email" class="email">
+                    <input type="submit" value="save" class="btn">
+                </form>
+            </div>
+        </section>
+        <!--end news-->
+        <section class="cridet" id="cridet">
+            <div class="box">
+                <h3>all reserved by codeskill</h3>
+            </div>
+            <section id="contact-details" class=""section-p1>
+        <div  class="details">
+            <span>GET IN TOUCH</span>
+            <h2>Visit one of our agency locations or contact us today</h2>
+            <h3>Head Office</h3>
+            <div>
+                <li>
+                    <i class="fal fa-map"></i>
+                    <p>56 Glassford street Glasgow G1 casablanca</p>
+                </li>
+                <li>
+                    <i class="far fa-envelop"></i>
+                    <p>56 Glassford street Glasgow G1 casablanca</p>
+                </li>
+                <li>
+                    <i class="fal fa-phone-alt"></i>
+                    <p>56 Glassford street Glasgow G1 casablanca</p>
+                </li>
+                <li>
+                    <i class="fal fa-clock"></i>
+                    <p>56 Glassford street Glasgow G1 casablanca</p>
+                </li>
+            </div>
+        </div>
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3324.6317663176023!2d-7.599065900000035!3d33.56294249999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda632b2b50e2ceb%3A0x8e51a134f99e8c4c!2z2LPZiNmCINin2YTZgtix2YrYudipINin2YTYqtis2KfYsdmK!5e0!3m2!1sar!2sma!4v1736780110561!5m2!1sar!2sma" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+    <section id="form-details">
+        <form action="">
+            <span>LEAVE A MESSAGE</span>
+            <h2>We live to hear from you</h2>
+            <input type="text" placeholder="Your Name">
+            <input type="text" placeholder="E-mail">
+            <input type="text" placeholder="Subject">
+            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message">
+            </textarea>
+            <button class="normal">Submit</button>
+        </form>
+
+        <div class="people">
+            <div>
+                <img src="images/logo0.png" alt="">
+                <p><span>sadiki</span>sadiki nour <br>Phone: + 00002315521 
+                <br>Email: contact example.com</p>
+            </div>
+            <div>
+                <img src="images/logo0.png" alt="">
+                <p><span>sadiki</span>sadiki nour <br>Phone: + 00002315521 
+                <br>Email: contact example.com</p>
+            </div>
+            <div>
+                <img src="images/logo0.png" alt="">
+                <p><span>sadiki</span>sadiki nour <br>Phone: + 00002315521 
+                <br>Email: contact example.com</p>
+            </div>
+            
+            
+        </div>
+
+    </section>
+   
+
+<!--section-newsletter start-->
+<section id="newsletter" class="section-p1 section-m1">
+    <div class="newtext">
+        <h4>Sign Up For newsletter</h4>
+        <p>Get E -mail updates about our latest shop and.<span>special offers.</span>
+        </p>
+        </div>
+        <div class="form">
+            <input type="text" placeholder="Your email adidas">
+            <button class="normal">Sing Up</button>
+
+        </div>
+
+
+    
+
+
+</section>
+<!--section- newsletter end-->
+<!--footer- start-->
+<footer class="section-1">
+    <div class="col"> 
+        <img class="logo" src="images/logo0.png" alt="">
+        <h4>Contact</h4>
+        <p><strong>Address:</strong>2024 Nike,
+             All Rights Reserved All Rights Reserved All Rights Reserved  </p>
+        <p><strong>Phone:</strong>2222222555522</p>
+        <p><strong>Hours:</strong>10:- 18:00, Mon- Sat</p>
+        <div class="follow">
+            <h4>follow</h4>
+            <div class="icon">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter" ></i>
+                <i class="fab fa-instagram"> </i>
+                <i class="fab fa-pinterest-p"></i>
+                <i class="fabfa-youtube"></i>
+            </div>
+        </div>
+    </div>
+
+    <div class="col">
+        <h4>About</h4>
+        <a href="#">About Us</a>
+        <a href="#">Delivery Information</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms & Conditions</a>
+        <a href="#">Contact Us</a>
+    </div>
+
+    <div class="col">
+        <h4>My Acount</h4>
+        <a href="#">Sign In</a>
+        <a href="#">View cART</a>
+        <a href="#">My Wishlist</a>
+        <a href="#">Track My Order</a>
+        <a href="#">Help</a>
+    </div>
+     
+    <div class="col install">
+        <h4>install App</h4>
+        <p>form App Store or Google Play</p>
+        <div class="row">
+          <img src="images/app (3).jpg" alt="">
+          <img src="images/play.jpg" alt="">
+         </div>
+         <p><p>Secured Payment Gateways</p></p>
+          <img src="images/pay-pay.png" alt="">
+          </div>
+
+    <div class="copyright">
+        <p> 2025,  Tech2 etc -HTML CSS Ecommerce template</p>
+    </div>
+
+   <h3>مجمع بير انزارن التجاري درب السلطان بجنب سوق القريعة التجاري</h3> 
+   <h4>Adresse
+    : 
+    شارع موديبوكيتا, درب السلطان الدار البيضاء, الدار البيضاء - سطات, الدارالبيضاء 20500
+    </h4>
+   
+</footer>
+<!--footer- end-->
+            
+        </section>
+        <script>
+            let menu = document.querySelector('#menu-bar');
+let navbar = document.querySelector('.navbar');
+
+menu.onclick =() =>{
+    menu.classList.toggle('fa-times');
+    navbar.classList.toggle('active');
+}
+
+let slides = document.querySelectorAll('.slide-container');
+let index = 0;
+
+function next(){
+    slides[index].classList.remove('active');
+    index = (index + 1) % slides.length;
+    slides[index].classList.add('active');
+}
+
+function prev(){
+    slides[index].classList.remove('active');
+    index = (index - 1 + slides.length) % slides.length;
+    slides[index].classList.add('active');
+}
+
+document.querySelectorAll('.featured-image-1').forEach(image_1 =>{
+    image_1.addEventListener('click', () =>{
+        var src = image_1.getAttribute('src');
+        document.querySelector('.big-image-1').src = src;
+    });
+});
+
+document.querySelectorAll('.featured-image-2').forEach(image_2 =>{
+    image_2.addEventListener('click', () =>{
+        var src = image_2.getAttribute('src');
+        document.querySelector('.big-image-2').src = src;
+    });
+});
+
+document.querySelectorAll('.featured-image-3').forEach(image_3 =>{
+    image_3.addEventListener('click', () =>{
+        var src = image_3.getAttribute('src');
+        document.querySelector('.big-image-3').src = src;
+    });
+});
+        </script>
+      
+          <script src="js/script.js"></script>
+
+      
+    </body>
+</html>
+
